@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="tk.Toplevel" id="toplevel_1">
+    <property name="height">200</property>
+    <property name="resizable">none</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Labelframe" id="labelframe_1">
+        <property name="height">250</property>
+        <property name="labelanchor">n</property>
+        <property name="relief">flat</property>
+        <property name="text" translatable="yes">Invisble
+</property>
+        <property name="width">480</property>
+        <layout manager="pack">
+          <property name="anchor">n</property>
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="propagate">False</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="frame_1">
+            <property name="height">250</property>
+            <property name="width">450</property>
+            <layout manager="pack">
+              <property name="anchor">n</property>
+              <property name="expand">true</property>
+              <property name="fill">both</property>
+              <property name="pady">10</property>
+              <property name="propagate">False</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="tk.Message" id="key_M">
+                <property name="anchor">center</property>
+                <property name="font">{Arial} 12 {bold}</property>
+                <property name="text" translatable="yes">You Do not have a License Key.
+Enter Your Name.</property>
+                <property name="width">550</property>
+                <layout manager="pack">
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="entry_1">
+                <property name="font">{Arial} 12 {bold}</property>
+                <property name="text" translatable="yes">entry_1</property>
+                <layout manager="pack">
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="button_1">
+                <property name="command">get_key</property>
+                <property name="text" translatable="yes">Get Key</property>
+                <layout manager="pack">
+                  <property name="pady">10</property>
+                  <property name="propagate">True</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

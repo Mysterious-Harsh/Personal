@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="homepage_F">
+    <property name="height">200</property>
+    <property name="relief">flat</property>
+    <property name="width">200</property>
+    <layout manager="place">
+      <property name="anchor">nw</property>
+      <property name="height">500</property>
+      <property name="width">500</property>
+      <property name="x">0</property>
+      <property name="y">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Button" id="hide_B">
+        <property name="command">hide</property>
+        <property name="text" translatable="yes">Hide</property>
+        <layout manager="grid">
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="show_B">
+        <property name="command">show</property>
+        <property name="text" translatable="yes">Show</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="backup_B">
+        <property name="command">back_up</property>
+        <property name="text" translatable="yes">Backup</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="restore_B">
+        <property name="command">restore</property>
+        <property name="text" translatable="yes">Restore</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="changepass_B">
+        <property name="command">change_pass</property>
+        <property name="text" translatable="yes">Change 
+Password</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="deleteuser_B">
+        <property name="command">delete_user</property>
+        <property name="text" translatable="yes">Delete
+User</property>
+        <layout manager="grid">
+          <property name="column">1</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">2</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="logout_B">
+        <property name="command">logout</property>
+        <property name="text" translatable="yes">Logout</property>
+        <layout manager="grid">
+          <property name="column">0</property>
+          <property name="padx">10</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
