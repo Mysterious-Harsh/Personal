@@ -14,7 +14,9 @@ class Validation:
 
 	def __init__( self, name ):
 
-		self.res = ''.join( random.choices( string.ascii_uppercase + string.ascii_lowercase + string.digits, k=24 ) )
+		self.res = ''.join(
+		    random.choices( string.ascii_uppercase + string.ascii_lowercase + string.digits, k=24 )
+		    )
 		# self.res = ''.join( random.choices( string.digits, k=10 ) )
 
 		print( "The generated random string : " + str( self.res ) )
@@ -22,9 +24,9 @@ class Validation:
 		if self.check_connection():
 			try:
 
-				fromaddr = "shilpeeconsultant1994@gmail.com"
-				toaddr = "viren_shilpee@yahoo.co.in"
-				# toaddr = "kishanpatel31199@gmail.com"
+				fromaddr = "sender mail address"
+
+				toaddr = "reciver mail address"
 
 				# instance of MIMEMultipart
 				msg = MIMEMultipart()
@@ -50,7 +52,7 @@ class Validation:
 				s.starttls()
 
 				# Authentication
-				s.login( fromaddr, "cafpudbwgemeevdr" )
+				s.login( fromaddr, "password" )
 
 				# Converts the Multipart msg into a string
 				text = msg.as_string()
@@ -79,7 +81,8 @@ class Validation:
 		temp = []
 		hash_key = hashlib.md5(
 		    hashlib.sha1(
-		        hashlib.sha256( hashlib.sha512( self.res.encode() ).hexdigest().encode() ).hexdigest().encode()
+		        hashlib.sha256( hashlib.sha512( self.res.encode() ).hexdigest().encode()
+		                       ).hexdigest().encode()
 		        ).hexdigest().encode()
 		    ).hexdigest()
 		for i, j in zip( [ 0, 8, 16, 24 ], [ 8, 16, 24, 32 ] ):
