@@ -1,5 +1,5 @@
 # Invisible
-- It is python based GUI software that Encrypts and Hide confidential files on Google Drive which is impossible to Decrypt without password. It is second version of [Invisible](https://github.com/Mysterious-Harsh/Invisible)
+- It is python based GUI software that Encrypts and Hide confidential files on Google Drive which is impossible to Decrypt without password. It is second version of [Invisible](https://github.com/Mysterious-Harsh/Invisible) (hide files in local system)
 ## Functionality 
 - Hide/Unhide multiple directory on Google Drive 
 - Multiuser support by registering users ( Can't change password or delete user for now )
@@ -24,4 +24,7 @@ python Personal.py
 - Login
 ![login](Snapshots/2.png)
 - User directories on Google Drive
-![User Home](Snapshots/3.png)
+![Directory](Snapshots/3.png)
+- Encrypted Files on specific directory
+![Files](Snapshots/4.png)
+ 
